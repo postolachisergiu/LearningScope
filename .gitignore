@@ -1,4 +1,1 @@
-surefire-reports/
-maven-status/
-maven-archiver/
-target/*.jar
+target/
