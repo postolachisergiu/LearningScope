@@ -4,7 +4,9 @@ import com.javafortesters.domainentities.User;
 import org.junit.Test;
 
 import javax.sound.midi.Soundbank;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -64,4 +66,80 @@ public class SimpleArray {
              System.out.println("Credentials are: " + user.getUsername()+ " and " + user.getPassword());
          }
      }
+
+
+     /*
+     using copyOf and copyOfRange Arrays methods
+      */
+    @Test
+    public void testDaysCopy(){
+        String[] workdays = {"Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday"};
+
+        String [] weekdays;
+        weekdays = Arrays.copyOf(workdays,7);
+        assertEquals(null, weekdays[5]);
+
+        String [] weekdays1 = Arrays.copyOfRange(workdays, 2, 5);
+        assertEquals("Friday", weekdays1[2]);
+        System.out.println(weekdays1[2]);
+    }
+
+    /*
+    using Arrays.fill()
+     */
+    @Test
+    public void testFillArray(){
+        int [] minusOne = new int[30];
+        Arrays.fill(minusOne, -1);
+        System.out.println(minusOne.length);
+
+
+        int[] tenItems = {0,0,0,0,0,1,1,1,1,1};
+        Arrays.fill(tenItems,5,10,2);
+        System.out.println(tenItems[5]);
+        System.out.println(tenItems[9]);
+
+    }
+
+    @Test
+    public void testSortArray(){
+        int [] outOfOrder = {2,4,3,1,5,0};
+
+         Arrays.sort(outOfOrder);
+
+        for (int u:outOfOrder
+             ) {
+            System.out.println(u);
+        }
+
+        String[] workdays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        Arrays.sort(workdays);
+        for (String j:workdays
+                ) {
+            System.out.println(j);
+        }
+
+    }
+
+    @Test
+    public void testCreateATriangle(){
+        createTriangle(10);
+        createTriangleInt(8);
+    }
+
+    private void createTriangle(int height){
+        for (String i="#"; i.length()<=height; i+="#"){
+            System.out.println(i);
+        }
+    }
+
+    private void createTriangleInt(int height){
+        for (int i=0; i<=height; i++){
+            for (int j = 1; j<=i; j++){
+                System.out.print(j + ",");
+            }
+            System.out.println();
+        }
+    }
 }
