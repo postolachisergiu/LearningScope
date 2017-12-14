@@ -40,5 +40,14 @@ public class UserTest {
                 "PaZZwor6",
                 user.getPassword());
     }
+
+    @Test
+    public void PasswordException(){
+        User user = new User();
+        user.setPassword("PaZZw");
+        assertEquals("setter password expected",
+                "PaZZw",
+                user.getPassword());
+    }
 }
 
