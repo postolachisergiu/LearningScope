@@ -1,4 +1,4 @@
-package com.javafortesters.chap012exceptions.examples;
+package com.javafortesters.chap012inheritance.examples;
 
 import com.javafortesters.domainentities.Admin;
 import com.javafortesters.domainentities.EmptyUser;

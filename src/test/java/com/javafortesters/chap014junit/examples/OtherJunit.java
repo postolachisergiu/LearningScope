@@ -1,4 +1,4 @@
-package com.javafortesters.chap014exceptions.examples;
+package com.javafortesters.chap014junit.examples;
 
 import com.javaforstesters.domainobject.InvalidPassword;
 import com.javafortesters.domainentities.User;
