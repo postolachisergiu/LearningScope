@@ -47,7 +47,7 @@ public class Rand {
 
         String validValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
         Random generate = new Random();
-        
+
 
     }
 }
