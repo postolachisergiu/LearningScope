@@ -1,10 +1,9 @@
 package com.exam;
 
 public class Test {
-    static int age;
-     public static void main (String args[]){
-         age = age + 1;
-         System.out.println("The age is " + age);
+     public static void main(String[] args) {
 
+          MyClass myClass = new MyClass();
+          System.out.println(myClass.nonStaticResult());
      }
 }
