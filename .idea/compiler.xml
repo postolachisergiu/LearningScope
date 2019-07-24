@@ -9,8 +9,8 @@
         <module name="LearningScope" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="LearningScope" target="1.7" />
+    <bytecodeTargetLevel target="8">
+      <module name="LearningScope" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
